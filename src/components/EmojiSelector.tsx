@@ -17,7 +17,6 @@ export const EmojiSelector: React.FC<EmojiSelectorProps> = ({
 
   const handleEmojiClick = async (index: number) => {
     try {
-      const path = await window.electron.getEmojiPath(index);
       onSelect(index);
     } catch (error) {
       toast({

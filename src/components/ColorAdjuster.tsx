@@ -44,8 +44,9 @@ export const ColorAdjuster: React.FC<ColorAdjusterProps> = ({
             value={saturation}
             onChange={onSaturationChange}
             min={0}
-            max={100}
+            max={200}
             step={1}
+            defaultValue={100}
           >
             <SliderTrack>
               <SliderFilledTrack />
@@ -60,8 +61,9 @@ export const ColorAdjuster: React.FC<ColorAdjusterProps> = ({
             value={brightness}
             onChange={onBrightnessChange}
             min={0}
-            max={100}
+            max={200}
             step={1}
+            defaultValue={100}
           >
             <SliderTrack>
               <SliderFilledTrack />
