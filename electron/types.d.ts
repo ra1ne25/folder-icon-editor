@@ -14,6 +14,11 @@ declare module 'ico-endec' {
   }>): ArrayBuffer;
 }
 
+declare module 'png-to-ico' {
+  function pngToIco(input: Buffer | Buffer[]): Promise<Buffer>;
+  export = pngToIco;
+}
+
 declare module 'colorsys' {
   export function rgb_to_hsv(color: { r: number; g: number; b: number }): { h: number; s: number; v: number };
   export function hsv_to_rgb(color: { h: number; s: number; v: number }): { r: number; g: number; b: number };
